@@ -109,6 +109,13 @@ public class PictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
+  public static void testMirrorDiagonal()
+  {
+    Picture caterpillar = new Picture("beach.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorDiagonal();
+    caterpillar.explore();
+  }
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -118,6 +125,20 @@ public class PictureTester
     temple.mirrorTemple();
     temple.explore();
   }
+  public static void testMirrorArms()
+  {
+    Picture temple = new Picture("snowman.jpg");
+    temple.explore();
+    temple.mirrorArms();
+    temple.explore();
+  }
+  public static void testMirrorGull()
+  {
+      Picture seagull = new Picture("seagull.jpg");
+      seagull.explore();
+      seagull.mirrorGull();
+      seagull.explore();
+    }
   
   /** Method to test the collage method */
   public static void testCollage()
@@ -152,10 +173,10 @@ public class PictureTester
     //testMirrorVertical();
     //testMirrorVerticalRightToLeft();
     //testMirrorHorizontal();
-    testMirrorHorizontalBottomToTop();
+    //testMirrorHorizontalBottomToTop();
     //testMirrorTemple();
     //testMirrorArms();
-    //testMirrorGull();
+    testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
